@@ -1,0 +1,20 @@
+.card{
+    box-shadow: 0 6px 10px rgb(0, 26, 255), 0 0 6px rgba(10, 152, 247, 0.925);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(1, 69, 255, 0.733), 0 4px 8px rgba(255, 3, 200, 0.884);
+}
+
+.button{
+  color: rgb(141, 23, 252);
+}
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+.card1{
+  width: fit-content;
+}

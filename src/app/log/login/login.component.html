@@ -1,0 +1,19 @@
+<!-- 
+  <div [formGroup]="form" action="#!">
+    <div class="form-group">
+       <label for="name">Name</label>
+       <input class="form-control" type="email" value="Admin000123" id="example-email-input" formControlName="nic">
+      </div>
+    <button (click)="login()" type="button" class="btn btn-default">Submit</button>
+  </div> 
+ -->
+ <div [formGroup]="form" (ngSubmit)="login()" novalidate>
+  <div class="col-md-12 mb-3">
+    <h3>Admin Login ID</h3>
+    <input type="text" formControlName="logid" class="form-control" required>
+  </div>
+  <div  class="form-group text-right">  
+  <button type="button" class="btn btn-primary gap-right" (click)="login()">Login</button>
+  </div>
+</div> 
+
