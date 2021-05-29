@@ -41,7 +41,9 @@
     "ngx-cookie-service": "^11.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@angular/cli": "~11.2.1",
+    "@angular/compiler-cli": "~11.2.1"
   },
   "devDependencies": {
     "@angular-devkit/architect": ">= 0.900 < 0.1200",
