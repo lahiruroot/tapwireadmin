@@ -1,0 +1,7 @@
+
+
+<div class="col-sm">
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker *ngFor="let item of model" [latitude]="item.latitude" [longitude]="item.logitude"></agm-marker> 
+  </agm-map>
+</div> 

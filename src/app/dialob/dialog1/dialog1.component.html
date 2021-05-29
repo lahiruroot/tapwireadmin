@@ -1,0 +1,48 @@
+
+<br>
+<div class="container">
+   <mat-label>
+     <h1>
+      Send Informations
+     </h1>
+   </mat-label>
+
+  <br>
+    <form [formGroup]="messageform">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <div class="row">
+    
+            <div class="col-md-12 mb-3">
+              <label>Message Titel</label>
+              <input type="text" formControlName="admin" class="form-control" required>
+            </div>
+    
+            <div class="col-md-12 mb-3">
+              <label>Message Sub Titel</label>
+              <input type="text" formControlName="topic" class="form-control">
+            </div>
+    
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <label>Sender Name</label>
+              <input type="email" formControlName="date" class="form-control" required>
+            </div>
+    
+            <div class="col-md-12 mb-3">
+              <label>Sent Date</label>
+              <input type="text" formControlName="msg" type="date" placeholder="Set registration date" value="" id="example-date-input"  class="form-control" required >
+            </div>
+          </div>
+    
+          <div class="form-group text-right">
+            <button mat-raised-button color="primary"  (click)='message()'>Send Message</button>
+          </div>
+    
+        </div>
+      </div>
+    </form>
+</div>
+<br>

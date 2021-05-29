@@ -1,0 +1,14 @@
+agm-map {
+    height: 100%;
+    width: 100%;
+  }
+.tt{
+  height: 1000;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-sm{
+  height: 900px;
+  width: 1500px;
+}

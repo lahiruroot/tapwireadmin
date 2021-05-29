@@ -1,0 +1,55 @@
+<mat-card class="mat-elevation-z8">
+  <h2 >Search History Details</h2>
+    <mat-form-field>
+        <mat-label><h3>Search</h3></mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex.123456789V" #input>
+      </mat-form-field>
+
+  </mat-card>
+   
+  <br>
+
+  <mat-card class="mat-elevation-cd">
+    <h2>History Details</h2>
+    <table mat-table [dataSource]="userdata" class="mat-elevation-z8">
+  
+
+        <ng-container class="mat-row:nth-child" matColumnDef="nic">
+            <th mat-header-cell *matHeaderCellDef><h4>Identycard Number</h4></th>
+            <td mat-cell *matCellDef="let element">{{element.nic}}</td>
+          </ng-container>
+
+
+    
+        <ng-container matColumnDef="phno">
+            <th mat-header-cell *matHeaderCellDef><h4>Phone Number</h4> </th>
+            <td mat-cell *matCellDef="let element">+94{{element.phno}} </td>
+          </ng-container>
+
+
+          <ng-container matColumnDef="latitude">
+            <th mat-header-cell *matHeaderCellDef><h4>Latitude Range</h4></th>
+            <td mat-cell *matCellDef="let element">Latitude{{element.latitude}} </td>
+          </ng-container>
+
+
+    
+        <ng-container matColumnDef="logitude">
+          <th mat-header-cell *matHeaderCellDef><h4>Logitude Range</h4></th>
+          <td mat-cell *matCellDef="let element">Logitude{{element.logitude}} </td>
+        </ng-container>
+
+
+
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef><h4>Date</h4></th>
+          <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+      </table>
+
+  </mat-card>
+
+  

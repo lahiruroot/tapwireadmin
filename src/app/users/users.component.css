@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .mat-elevation-z8{
+    background-color:rgba(115, 183, 247, 0.849);
+    }
+  
+  .mat-elevation-cd{
+      background-color:rgba(14, 105, 83, 0.849);
+    }
