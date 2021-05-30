@@ -1,6 +1,6 @@
-const expres = require('express');
+const express = require('express');
 const path = require('path');
-const app = expres();
+const app = express();
 
 app.use(express.static(path.join(__dirname, 'dist/app-web')));
 
